@@ -39,7 +39,7 @@ const ContactUs = () => {
             </Social>
           </Hide>
         </div>
-        <ScrollTop/>
+        <ScrollTop />
       </ContactStyle>
     </>
   );
@@ -49,11 +49,18 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: white;
   min-height: 90vh;
+  @media (max-width: 1300px) {
+    padding: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 const Title = styled.div`
   margin-bottom: 4rem;
   color: white;
+  @media (max-width: 1300px) {
+    margin-top: 5rem;
+  }
 `;
 
 const Hide = styled.div`
